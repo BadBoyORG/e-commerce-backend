@@ -1,4 +1,4 @@
-import { userEntity } from '../entities/user.entity';
+import { UserEntity } from '../entities/user.entity';
 
 export class ReturnUserDto {
   id: number;
@@ -7,11 +7,11 @@ export class ReturnUserDto {
   phone: string;
   cpf: string;
 
-  constructor(userEntity: userEntity) {
-    this.id = userEntity.id;
-    this.name = userEntity.name;
-    this.email = userEntity.email;
-    this.phone = userEntity.phone;
-    this.cpf = userEntity.cpf;
+  constructor(UserEntity: UserEntity) {
+    this.id = UserEntity.id;
+    this.name = UserEntity.name;
+    this.email = UserEntity.email;
+    this.phone = UserEntity.phone;
+    this.cpf = UserEntity.cpf;
   }
 }

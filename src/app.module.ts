@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { userModule } from './users/user.module';
+import { UserModule } from './users/user.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { StateModule } from './state/state.module';
@@ -23,7 +23,7 @@ import { CacheModule } from './cache/cache.module';
       migrations: [`${__dirname}/migration/{.ts,*.js}`],
       migrationsRun: true,
     }),
-    userModule,
+    UserModule,
     StateModule,
     CityModule,
     AddressModule,
